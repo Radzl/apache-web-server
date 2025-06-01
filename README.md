@@ -111,6 +111,15 @@ sudo systemctl status apache2
 
 Este resultado debería confirmar que Apache se ha iniciado correctamente.
 
+## Configuración
+
+Por defecto, Apache incluye un sitio básico activo, cuyo contenido está en `/var/www/html` y cuya configuración está en `/etc/apache2/sites-enabled/000-default.conf`.
+
+Podemos cambiar cómo Apache gestiona las solicitudes y alojar varios sitios en el mismo servidor modificando sus archivos de Virtual Hosts.
+
+Hoy, mantendremos el host virtual predeterminado en `www.example.com` y crearemos uno nuevo para `gci.example.com`.
+
+Para empezar, crearemos la carpeta para nuestro nuevo sitio en `/var/www/`.
 
 
 
