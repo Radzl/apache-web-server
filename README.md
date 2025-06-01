@@ -151,7 +151,7 @@ Copie y pegue el siguiente código a su index.html:
     <title> ¡Ubuntu rocks! </title>
   </head>
   <body>
-    <p> I'm running this website on an Ubuntu server!</p>
+    <p> I'm running this website on an Ubuntu server! </p>
   </body>
 </html>
 ```
