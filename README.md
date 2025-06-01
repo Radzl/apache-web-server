@@ -113,6 +113,8 @@ Este resultado debería confirmar que Apache se ha iniciado correctamente.
 
 ## Configuración
 
+####Creación del sitio Web
+
 Por defecto, Apache incluye un sitio básico activo, cuyo contenido está en `/var/www/html` y cuya configuración está en `/etc/apache2/sites-enabled/000-default.conf`.
 
 Podemos cambiar cómo Apache gestiona las solicitudes y alojar varios sitios en el mismo servidor modificando sus archivos de Virtual Hosts.
@@ -155,7 +157,24 @@ Copie y pegue el siguiente código a su index.html:
   </body>
 </html>
 ```
-A continuación, creamos un archivo VirtualHost.
+####Configuración de VirtualHost
+
+Primeramente, accedemos al directorio de configuración mediante el comando:
+
+```bash
+cd /etc/apache2/sites-available/
+```
+Como Apache incluye un archivo VirtualHost por defecto, lo copiamos para crear uno nuevo con el nombre de nuestro sitio (en este caso, gci.conf):
+
+```bash
+sudo cp 000-default.conf gci.conf
+```
+
+Luego, abrimos el archivo para editarlo:
+
+```bash
+sudo nano gci.conf
+```
 
 
 
