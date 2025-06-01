@@ -80,11 +80,12 @@ Si has encontrado dicho error procederías a instalar el índice de paquetes de 
 ```bash
 sudo apt update
 ```
-+
+No te olvides de instalar también el paquete apache2 de nuevo:
 
 ```bash
 sudo apt install apache2
 ```
+
 
 
 
