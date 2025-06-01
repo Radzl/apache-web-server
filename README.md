@@ -145,6 +145,7 @@ A continuación para probar el funcionamiento le proporciono un código básico 
 
 Copie y pegue el siguiente código a su index.html:
 
+```bash
 <html>
   <head>
     <title> ¡Ubuntu rocks! </title>
@@ -153,7 +154,7 @@ Copie y pegue el siguiente código a su index.html:
     <p> I'm running this website on an Ubuntu server!</p>
   </body>
 </html>
-
+```
 A continuación, creamos un archivo VirtualHost.
 
 
