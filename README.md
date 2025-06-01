@@ -55,7 +55,7 @@ El objetivo principal de este proyecto es comprender el funcionamiento de Apache
 
 ## Instalación
 
-### Paso 1: Instalar Apache
+### 1: Instalar Apache
 
 Actualizar el índice de paquetes:
 
@@ -85,6 +85,35 @@ No te olvides de instalar también el paquete apache2 de nuevo:
 ```bash
 sudo apt install apache2
 ```
+
+### 2: Ajustar Firewall
+
+Antes de poder probar Apache, es fundamental ajustar la configuración del firewall para permitir que las conexiones externas accedan a los puertos web estándar. Si seguiste las indicaciones previas, es probable que tengas configurado un firewall UFW que limita el acceso a tu servidor.
+
+Al instalar Apache, este se integra automáticamente con UFW, creando perfiles de aplicación específicos. Estos perfiles facilitan la activación o desactivación del acceso a Apache a través del firewall de manera sencilla y controlada.
+
+Mostrar perfiles de aplicación UFW: 
+
+```bash
+sudo ufw app list
+```
+Se enumerarán los perfiles de aplicación.
+
+### 3: Comprobar Servidor Web
+
+Al finalizar la instalación, Ubuntu arranca automáticamente el servicio de Apache. Por lo tanto, el servidor web debería estar funcionando.
+
+Para verificar si el servicio está activo, puedes usar el sistema init systemd con el siguiente comando:
+
+```bash
+sudo systemctl status apache2
+```
+
+Este resultado debería confirmar que Apache se ha iniciado correctamente.
+
+
+
+
 
 
 
