@@ -113,7 +113,7 @@ Este resultado debería confirmar que Apache se ha iniciado correctamente.
 
 ## Configuración
 
-####Creación del sitio Web
+#### Creación del sitio Web
 
 Por defecto, Apache incluye un sitio básico activo, cuyo contenido está en `/var/www/html` y cuya configuración está en `/etc/apache2/sites-enabled/000-default.conf`.
 
