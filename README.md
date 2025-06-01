@@ -2,8 +2,7 @@
 
 ## Resumen
 
-Este documento detalla el proceso de instalación y configuración de un servidor web Apache en Linux. Se describen los pasos necesarios para descargar el software, realizar ajustes en los archivos de configuración y gestionar el servicio para que funcione correctamente. Al final, se ofrece una valoración personal sobre el aprendizaje obtenido y las dificultades encontradas durante el desarrollo del trabajo.
-
+Este documento explica cómo instalar y configurar un servidor web Apache en un sistema Linux. Se indican los pasos para descargar el programa, modificar los archivos de configuración y administrar el servicio para asegurar su correcto funcionamiento. Al finalizar, se incluye una opinión personal sobre lo aprendido y los retos enfrentados durante la realización del proyecto
 ---
 
 ## Palabras clave
@@ -11,10 +10,10 @@ Este documento detalla el proceso de instalación y configuración de un servido
 - Apache  
 - Linux  
 - Servidor web  
-- httpd.conf  
-- ServerName  
-- Servicio  
-- UFW  
+- VirtualHost  
+- Firewall  
+- Configuración  
+- HTTP  
 
 ---
 
@@ -34,11 +33,11 @@ Este documento detalla el proceso de instalación y configuración de un servido
 
 ## Contexto
 
-Este proyecto se lleva a cabo en un entorno académico, en el que los estudiantes aprenden sobre tecnologías de servidores web, en particular Apache. El objetivo de esta actividad es brindar una comprensión básica de los servidores web, su configuración y funcionamiento, así como su rol en la arquitectura de la web.
+Este trabajo se realiza en un contexto académico donde los alumnos estudian tecnologías relacionadas con servidores web, enfocándose principalmente en Apache. La finalidad de esta actividad es proporcionar un entendimiento básico sobre qué son los servidores web, cómo se configuran y cómo funcionan, además de su importancia dentro de la estructura de la web.
 
-Apache es uno de los servidores web más utilizados a nivel mundial. Fue desarrollado por la Apache Software Foundation y lanzado en 1995. Es un servidor web de código abierto y gratuito que permite alojar sitios web y aplicaciones. Su flexibilidad y compatibilidad con diferentes sistemas operativos (como Unix, Linux y Windows) lo han convertido en una opción popular para desarrolladores y empresas.
+Apache es uno de los servidores web más populares a nivel global. Fue creado por la Apache Software Foundation y lanzado en 1995. Se trata de un servidor web libre y de código abierto que facilita el alojamiento de sitios y aplicaciones web. Gracias a su versatilidad y soporte para diversos sistemas operativos como Unix, Linux y Windows, se ha convertido en una opción preferida por desarrolladores y empresas.
 
-Apache permite gestionar solicitudes HTTP y servir contenido web estático o dinámico. Se utiliza tanto en entornos de producción como de desarrollo, y su arquitectura modular permite añadir funcionalidades adicionales a través de módulos que amplían sus capacidades.
+Este servidor web es capaz de manejar peticiones HTTP y entregar contenido tanto estático como dinámico. Apache se emplea en ambientes de producción y desarrollo, y su diseño modular permite extender sus funcionalidades mediante módulos adicionales que aumentan sus prestaciones
 
 ### Posibles alternativas a Apache
 
@@ -50,7 +49,7 @@ Apache permite gestionar solicitudes HTTP y servir contenido web estático o din
 
 ## Motivación
 
-El objetivo principal de este proyecto es comprender el funcionamiento de Apache como servidor web y su rol esencial en la gestión de sitios y aplicaciones web. Esta práctica busca que el estudiante adquiera habilidades prácticas en la configuración y administración de servidores, sentando así una base sólida para entornos profesionales y futuros proyectos.
+El objetivo principal de este proyecto es comprender el funcionamiento de Apache como servidor web y su rol esencial en la gestión de sitios y aplicaciones web. Esta práctica busca que el estudiante adquiera habilidades prácticas en la configuración y administración de servidores, sentando así una base sólida para entornos profesionales.
 
 ---
 
@@ -62,3 +61,32 @@ Actualizar el índice de paquetes:
 
 ```bash
 sudo apt update
+```
+
+Instalar el paquete apache2: 
+
+```bash
+sudo apt install apache2
+```
+
+En este paso nos puede salir algún error que impida la instalación, lo correcto sería en este caso matar el proceso e instalar de nuevo.
+El comando para matar el proceso en caso de error sería: 
+
+```bash
+sudo fuser -vki /var/lib/dpkg/lock
+```
+Si has encontrado dicho error procederías a instalar el índice de paquetes de nuevo: 
+
+```bash
+sudo apt update
+```
++
+
+```bash
+sudo apt install apache2
+```
+
+
+
+
+
