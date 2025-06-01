@@ -119,7 +119,47 @@ Podemos cambiar cómo Apache gestiona las solicitudes y alojar varios sitios en 
 
 Hoy, mantendremos el host virtual predeterminado en `www.example.com` y crearemos uno nuevo para `gci.example.com`.
 
-Para empezar, crearemos la carpeta para nuestro nuevo sitio en `/var/www/`.
+Para empezar, crearemos la carpeta para nuestro nuevo sitio en `/var/www/` ejecutando el siguiente comando: 
+
+```bash
+sudo mkdir /var/www/gci/
+```
+
+Lo llamamos “gci”, pero puede ser cualquier nombre, siempre que lo especifiquemos luego en la configuración de los hosts virtuales.
+
+Con el directorio creado, ahora añadiremos un archivo HTML. Entramos en la carpeta y creamos el archivo mediante los comandos:
+
+```bash
+cd /var/www/gci/
+```
+
+```bash
+nano index.html
+```
+
+```bash
+sudo nano index.html
+```
+
+A continuación para probar el funcionamiento le proporciono un código básico para su index.html:
+
+Copie y pegue el siguiente código a su index.html:
+
+<html>
+  <head>
+    <title> ¡Ubuntu rocks! </title>
+  </head>
+  <body>
+    <p> I'm running this website on an Ubuntu server!</p>
+  </body>
+</html>
+
+A continuación, creamos un archivo VirtualHost.
+
+
+
+
+
 
 
 
