@@ -206,10 +206,8 @@ Este proceso me ha permitido familiarizarme con los archivos de configuración d
 
 ##Bibliografía
 
-- Documentación Apache Classroom
-- Documentación oficial de Apache HTTP Server
-https://httpd.apache.org/docs/
--DigitalOcean Tutorials (muy completo para instalar y configurar Apache en Ubuntu)
-https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-es
--Ubuntu Official Documentation
+#####Documentación Apache Classroom
+#####Documentación oficial de Apache HTTP Server - https://httpd.apache.org/docs/
+#####DigitalOcean Tutorials (muy completo para instalar y configurar Apache en Ubuntu) - https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-es
+#####Ubuntu Official Documentation
 https://ubuntu.com/server/docs/web-servers-apache
