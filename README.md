@@ -176,16 +176,40 @@ Luego, abrimos el archivo para editarlo:
 sudo nano gci.conf
 ```
 
+####Activar VirtualHost
 
+Tras configurar nuestro sitio, hay que activar su archivo de configuración para que Apache lo reconozca. Para hacerlo, ejecutamos este comando desde la carpeta donde está el archivo:
 
+```bash
+sudo a2ensite gci.conf
+```
 
+Para cargar el nuevo sitio, reiniciamos Apache: 
 
+```bash
+sudo systemctl reload apache2
+```
 
+El resultado debería mostrarte: "I'm running this website on an Ubuntu server!"
 
+##Valoración Personal
 
+Crear este tutorial me ha ayudado a entender mejor el funcionamiento interno de Apache y los pasos necesarios para configurarlo en diferentes entornos. Aunque aún no he visto el servidor en acción, documentar cada etapa y analizar la teoría detrás de cada comando me ha permitido aclarar conceptos.
 
+Este proceso de elaboración me prepara para cuando realice la instalación práctica.
 
+##Conclusión
 
+Aunque no realicé la práctica de forma presencial, a través de este tutorial he comprendido cómo se instala y configura un servidor web Apache en Linux. He seguido los pasos teóricos para la descarga, instalación y configuración del servidor, entendiendo cómo Apache queda operativo y sirve contenido web.
 
+Este proceso me ha permitido familiarizarme con los archivos de configuración de Apache y cómo se gestiona su servicio en sistemas Linux, lo que me ayuda a asimilar los conceptos para poder aplicarlos en un entorno real en el futuro.
 
+##Bibliografía
 
+- Documentación Apache Classroom
+- Documentación oficial de Apache HTTP Server
+https://httpd.apache.org/docs/
+-DigitalOcean Tutorials (muy completo para instalar y configurar Apache en Ubuntu)
+https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-es
+-Ubuntu Official Documentation
+https://ubuntu.com/server/docs/web-servers-apache
